@@ -1,0 +1,33 @@
+echo "Prêt ?"
+echo "1. Yes"
+echo "2. No"
+
+read user
+x=1
+
+while [ x - 1 ]
+
+	echo "Prêt ?"
+	echo "1. start"
+	echo "2. remove"
+	echo "3. compile"
+
+	read user
+
+
+	if [ $user -eq 1 ]
+	then
+		touch test.sql
+		touch test.db
+		python3 BLEHeartRateLogger.py -m EE:8B:10:23:C4:E8 -o test.db
+	fi
+
+	if [ $user -eq 2 ]
+        then
+                rm test.s
+ql
+                rm test.db
+        fi
+
+
+

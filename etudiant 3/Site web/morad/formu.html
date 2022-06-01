@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta description="Formulaire d'inscription">
+
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+  </head>
+
+  <body>
+    <h1>Formulaire d'inscription</h1>
+    <p>Nous vous prions de remplir ce formulaire avec les informations demandées. les champs en gras sont obligatoires. <em>Ces informations nous permettront de personaliser votre espace etudiant</em></p>
+    <form action="Felicitations.html">
+      <table cellspacing="30">
+        <tr>
+         <td><label><strong>Nom</strong></label></td>
+         <td><input type="text"></td>
+         </tr>
+         <tr>
+           <td><label><strong>Prenom</strong></label></td>
+           <td><input type="text"></td>
+         </tr>
+         <tr>
+           <td><label><strong>E-mail</strong></label></td>
+           <td><input type="email"></td>
+         </tr>
+         <tr>
+           <td><label>Code Postal</label></td>
+           <td><input type="text"></td>
+         </tr>
+         <tr>
+           <td><label><strong>Ville</strong></label></td>
+           <td><input type="text"></td>
+         </tr>
+         <tr>
+         <tr>
+           <td><label><strong>Sexe</strong></label></td>
+           <td><input type="radio">Homme
+           <input type="radio">Femme</td>
+         </tr>
+         <tr>
+           <td><label><strong>Vous possédez un</strong></label></td>
+           <td><input list="animal" id="animal"></td>
+           <datalist id="animal">
+                <option value="Chat">
+                <option value="Chien">
+                <option value="Autres...">
+           </datalist>
+         </tr>
+
+      </table>
+      <p>
+      <input type="checkbox"> J'accepte les clauses de confidentialités et je m'engage à respecter le reglement de l'ecole
+      </p>
+      <input type="submit">
+    </form>
+  </body>
+</html>
